@@ -24,7 +24,6 @@ To protect core intellectual property prior to formal publication, this reposito
 
 ---
 ### 📊 Overview of Numerical Experiments
----
 
 To comprehensively evaluate the superiority of the proposed method compared to the conventional loss function, we conducted **5 core numerical experiments** in the paper. The results fully demonstrate that, even when utilizing a simple fully connected neural network, our method can achieve a significant improvement in accuracy across velocity models of varying complexity. The experiments cover both 2D multi-source and 3D single-source wavefield simulations:
 
