@@ -23,7 +23,7 @@ To protect core intellectual property prior to formal publication, this reposito
 * **Core Loss Function**: The novel loss function based on the  **Helmholtz Equation Parameterized by Amplitude and Unwrapped Phase**.
 
 ---
-### 📊 Overview of Numerical Experiments
+### Overview of Numerical Experiments
 
 To comprehensively evaluate the superiority of the proposed method compared to the conventional loss function, we conducted **5 core numerical experiments** in the paper. The results fully demonstrate that, even when utilizing a simple fully connected neural network, our method can achieve a significant improvement in accuracy across velocity models of varying complexity. The experiments cover both 2D multi-source and 3D single-source wavefield simulations:
 
@@ -33,7 +33,34 @@ To comprehensively evaluate the superiority of the proposed method compared to t
 4. **2D Overthrust Complex Model Test (4 Hz, 180,000 sampling points)**: Within the complex Overthrust structural model featuring strong lateral heterogeneity, this test verifies the feasibility and outstanding performance of the new method in multi-source simulations for complex media compared to the conventional method.
 5. **3D Overthrust Complex Model Test (8 Hz, 80,000 sampling points)**: Extending the theoretical framework into three-dimensional space, this test successfully verifies its high efficiency and high precision in single-source wavefield simulations for 3D complex media.
 ---
-## ⚙️ Environment Setup
+### Core Visualizations
+
+The following presents the comparative results of the 5 Hz frequency-domain wavefield simulation for the layered model with 3,000 sampling points: The first row shows the velocity model and the reference wavefield calculated based on the finite difference method (FDM). The second row displays the amplitude and unwrapped phase predicted by our novel PINN method, along with a comparison of its reconstructed wavefield against the conventional method.
+
+<div align="center">
+  <table style="text-align: center;">
+    <tr>
+      <td style="width: 30%; text-align: right; padding-right: 10px;">
+        <b>Velocity Model</b><br>
+        <img src="./results/Sigsbee_5Hz_3k_samples/v.png" alt="Velocity Model" style="width: 40%;">
+      </td>
+      <td style="width: 70%; text-align: left; padding-left: 10px;">
+        <b>Reference Wavefield (FDM)</b><br>
+        <img src="./results/Sigsbee_5Hz_3k_samples/ref.png" alt="Reference Wavefield" style="width: 100%;">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top: 15px;">
+        <b>PINN Predicted Results Comparison</b><br>
+        <i>(a) Predicted Amplitude &nbsp; (b) Predicted Unwrapped Phase &nbsp; (c) Novel Method Wavefield &nbsp; (d) Conventional Method Wavefield</i><br>
+        <img src="./results/Sigsbee_5Hz_3k_samples/predicted_amp_pha_wavefield.png" alt="Predicted Amplitude, Phase and Wavefield" style="width: 95%;">
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+###  ⚙️ Environment Setup
 
 The code is implemented in Python using TensorFlow 2.4.0. To ensure the reproducibility of the experimental results, the code execution is restricted to a deterministic computational mode.
 
