@@ -10,19 +10,6 @@ When solving the frequency-domain Helmholtz equation, conventional Physics-Infor
 This project proposes a novel **reparameterized scattered Helmholtz equation**. By decoupling the wavefield into **Amplitude** and **Unwrapped Phase**, we transform the task of fitting high-frequency oscillations into a smooth function fitting task, at which neural networks excel. Experiments demonstrate that this method achieves a significant improvement in computational accuracy for both 2D and 3D complex models, even when using simple fully connected networks.
 
 ---
-
-## 🔒 Repository Status: Phased Release
-
-To protect core intellectual property prior to formal publication, this repository is currently in a **phased release** state.
-
-**✅ Currently Available (Review Phase):**
-* **`architecture/`**: The PINN backbone network architecture and activation function configurations used in the paper.
-* **`results/`**: The output results of the novel loss function and the conventional loss function.
-
-**🚀 Upcoming (To be open-sourced immediately upon official publication):**
-* **Core Loss Function**: The novel loss function based on the  **Helmholtz Equation Parameterized by Amplitude and Unwrapped Phase**.
-
----
 ### Overview of Numerical Experiments
 
 To comprehensively evaluate the superiority of the proposed method compared to the conventional loss function, we conducted **5 core numerical experiments** in the paper. The results fully demonstrate that, even when utilizing a simple fully connected neural network, our method can achieve a significant improvement in accuracy across velocity models of varying complexity. The experiments cover both 2D multi-source and 3D single-source wavefield simulations:
