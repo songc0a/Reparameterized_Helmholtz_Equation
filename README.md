@@ -1,6 +1,6 @@
 # PINN-based Seismic Wavefield Simulation for Helmholtz Equation Parameterized by Amplitude and Unwrapped Phase
 
-This repository contains the partial source code and execution results for the paper **"PINN-based Seismic Wavefield Simulation for Helmholtz Equation Parameterized by Amplitude and Unwrapped Phase"**. The paper is currently under review in the journal *Geophysics*.
+This repository contains the partial source code and execution results for the paper **"PINN-based Seismic Wavefield Simulation for Helmholtz Equation Parameterized by Amplitude and Unwrapped Phase"**. The paper is published in the journal *Geophysics*.
 ---
 
 ## 💡 Methodology Highlights
