@@ -63,3 +63,21 @@ The code is implemented in Python using TensorFlow 2.4.0. To ensure the reproduc
 pip install tensorflow==2.4.0 numpy==1.21.5
 pip install scipy h5py matplotlib
 ```
+**Citing Installation:**
+If you find our code and publications helpful, please kindly cite the following publications.
+
+@article{song2026pinn, 
+
+title={PINN-based Seismic Wavefield Simulation for the Helmholtz Equation Parameterized by Amplitude and Unwrapped Phase},
+
+author={Wang, Zhixi and Song, Chao and Liu, Cai}, 
+
+journal={Geophysics},
+
+volume={}, 
+
+number={}, 
+
+pages={}, 
+
+year={2026} }
